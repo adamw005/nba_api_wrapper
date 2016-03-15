@@ -40,6 +40,7 @@ Returns information about games for a given date. The date param is optional and
 Date format expected is YYYYMMDD
 
 ## Player
+#### Get A Single Player
 ```ruby```
 NBA::Player.get_player(player_id, league_id)
 ```
@@ -47,7 +48,7 @@ NBA::Player.get_player(player_id, league_id)
 Will return a single player's information. player_id is required and is the NBA's player id.
 
 league_id is optional, and will default to '00' which is the NBA league id. It also accepts '20' which is the NBADL league ID
-
+#### Get Multiple Players
 ```ruby```
 NBA::Player.get_all_players(is_current_season,leagueId,season_str)
 ```
@@ -65,19 +66,22 @@ Returns play by play information for a given game.
 game_id is required (and is the NBA's game id), while start_period and end_period are optional and will default to 1 & 10 respectively.
 
 ## Team Info
+#### Get Lots Of Team Stat Info
 ```ruby```
 NBA::TeamStats.get_team_stats(lots of params)
 ```
 *IMPORTANT*
 
-This accepts a boatload of params at the moment, none of which are required. If you're interested in seeing the possible options you can test out an example endpoint [here](http://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=)
+This accepts a boatload of params at the moment, none of which are required and many of which are currently hard coded. If you're interested in seeing the possible options you can test out an example endpoint [here](http://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=)
 
+#### Get Team Info
 ```ruby```
 NBA::TeamStats.get_teams
 ```
 
 This will return a list of current NBA teams in a hash where the key is the team id and the value is their name in string format
 
+#### Get A Team Name
 ```ruby```
 NBA::TeamStats.get_team_by_id(id)
 ```
