@@ -41,10 +41,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  http
-  json
+  http (~> 1.0.2, >= 1.0)
+  json (~> 1.8.1, >= 1.8.1)
   nba_api_wrapper!
-  rspec
+  rspec (~> 3.4.0, >= 3.4.0)
 
 BUNDLED WITH
    1.11.2
