@@ -61,3 +61,16 @@ describe 'NBA:TeamStats' do
   end
 
 end
+
+
+
+# PLAYER STATS TESTS
+describe 'NBA:PlayerStats' do
+
+  context '#get_player_stats: gets the player stats for a number of situations' do
+    it 'should be a hash' do
+      expect(NBA::PlayerStats.get_player_stats().class.to_s).to eql("Hash")
+    end
+  end
+
+end

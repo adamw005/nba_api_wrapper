@@ -13,10 +13,17 @@ gem build nba_api_wrapper.gemspec
 gem install nba_api_wrapper-0.1.0.gem
 ```
 
-You can now use your gem!
+#### To Use The Gem
 
-Note:
-* You may need to install the dependencies as well
+##### Locally
+```
+require 'nba_api_wrapper'
+```
+##### If You Want To Include An Up To Date Version In Your Rails Project
+```
+gem 'nba_api_wrapper', :git => 'git://github.com/jrmils89/nba_api_wrapper.git'
+```
+
 
 # To Run Tests
 From the gem's directory
