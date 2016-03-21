@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.description = "A simple gem to get the NBA API endpoints"
   s.authors     = ["Jesse Mills"]
   s.email       = 'jessemills1989@gmail.com'
-  s.files       = ["lib/nba_api_wrapper.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/nba_api_wrapper'
+  s.files       = ["lib/nba_api_wrapper.rb", "lib/nba/game.rb","lib/nba/play_by_play.rb","lib/nba/player.rb", "lib/nba/team_stats.rb"]
+  # s.homepage    =
+  #   'http://rubygems.org/gems/nba_api_wrapper'
   s.license       = 'MIT'
   s.add_development_dependency 'rspec', '~> 3.4.0', '>= 3.4.0'
   s.add_development_dependency 'http', '~> 1.0.2', '>= 1.0'
