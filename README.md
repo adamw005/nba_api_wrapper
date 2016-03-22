@@ -1,3 +1,7 @@
+# Test Status
+
+[![Build Status](https://travis-ci.org/jrmils89/nba_api_wrapper.svg?branch=master)](https://travis-ci.org/jrmils89/nba_api_wrapper)
+
 # Installation
 ```
 git clone https://github.com/jrmils89/nba_api_wrapper.git
