@@ -2,4 +2,4 @@ language: ruby
 rvm:
   - 2.2.3
 script:
-  - rspec spec/wrapper_spec.rb
+  - bundle exec rspec spec/wrapper_spec.rb
