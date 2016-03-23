@@ -108,5 +108,24 @@ describe 'NBA::Tracking::Stats' do
     end
   end
 
+  context '#get_player_defense: gets the player tracking defense data' do
+    it 'should be a hash' do
+      expect(NBA::Tracking::Stats.get_player_defense().class.to_s).to eql("Hash")
+    end
+  end
+
+  context '#get_team_shots: gets the team tracking shot data' do
+    it 'should be a hash' do
+      expect(NBA::Tracking::Stats.get_team_shots().class.to_s).to eql("Hash")
+    end
+  end
+
+  context '#get_team_defense: gets the team tracking defense data' do
+    it 'should be a hash' do
+      expect(NBA::Tracking::Stats.get_team_defense().class.to_s).to eql("Hash")
+    end
+  end
+
+
 end
 
