@@ -1,6 +1,6 @@
 # Note About The Readme
 
-This readme is a bit out of date at the moment. It will be updated when I have a bit more time. If you want to see all the endpoints you could come through the tests to see all that are available
+This readme is a bit out of date at the moment. It will be updated when I have a bit more time. If you want to see all the endpoints you could comb through the tests to see all that are available
 
 # Test Status
 
