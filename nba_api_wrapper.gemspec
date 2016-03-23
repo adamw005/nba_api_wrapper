@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'nba_api_wrapper'
-  s.version     = '0.2.0'
+  s.version     = '0.2.1'
   s.date        = '2016-03-13'
   s.summary     = "NBA API Wrapper"
   s.description = "A simple gem to get the NBA API endpoints"
