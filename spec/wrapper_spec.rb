@@ -16,6 +16,15 @@ describe 'NBA:Player' do
   end
 end
 
+# ROSTER TESTS
+describe 'NBA:Roster' do
+  context '#get_team_roster: gets a team roster' do
+    it 'should be a hash' do
+      expect(NBA::Roster.get_team_roster(1610612738).class.to_s).to eql("Hash")
+    end
+  end
+end
+
 # GAME TESTS
 describe 'NBA:Game' do
 
