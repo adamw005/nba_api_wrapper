@@ -101,7 +101,7 @@ This will return a a string of a team name when passed a team id. The id is requ
 
 # Disclaimer
 
-As is the case with all wrappers around 3rd party end points, I do not claim ownership of this data. This gem also only works in so far as the NBA doesn't change, disable, or remove these endpoints.
+This readme is a bit out of date at the moment. It will be updated when I have a bit more time. If you want to see all the endpoints you could come through the tests to see all that are available
 
 # Contributing
 
