@@ -1,9 +1,11 @@
-class NBA
-  class Player
+class NBA::Player
     BASE_URI = 'http://stats.nba.com/stats'
 
     def self.get_player(playerId, leagueId='00')
-      res = HTTP.get(BASE_URI+'/commonplayerinfo', :params => {:LeagueID => leagueId, :PlayerID => playerId})
+      res = HTTP.get(BASE_URI+'/commonplayerinfo', :params => {
+        :LeagueID => leagueId,
+        :PlayerID => playerId
+      })
       if res.code == 200
         return JSON.parse(res.body)
       end
@@ -12,7 +14,11 @@ class NBA
 
     def self.get_all_players(is_current_season=true,leagueId='00',season_str=current_season)
       is_current_season = is_current_season ? 1 : 0
-      res = HTTP.get(BASE_URI+'/commonallplayers', :params => {:IsOnlyCurrentSeason => is_current_season, :LeagueID => leagueId, :Season => season_str})
+      res = HTTP.get(BASE_URI+'/commonallplayers', :params => {
+        :IsOnlyCurrentSeason => is_current_season,
+        :LeagueID => leagueId,
+        :Season => season_str
+      })
       if res.code == 200
         return JSON.parse(res.body)
       end
@@ -32,5 +38,4 @@ class NBA
       end
     end
 
-  end #END OF PLAYER CLASS
-end #END OF NBA NAMESPACE
+end #END OF PLAYER CLASS

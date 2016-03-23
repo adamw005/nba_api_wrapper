@@ -1,5 +1,4 @@
-class NBA
-  class Game
+class NBA::Game
     BASE_URI = 'http://data.nba.com/jsonp/5s/json/cms/noseason/scoreboard'
 
     def self.get_games(date=today_date)
@@ -20,5 +19,4 @@ class NBA
     end
 
 
-  end
 end
