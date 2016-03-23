@@ -8,18 +8,18 @@ git clone https://github.com/jrmils89/nba_api_wrapper.git
 ```
 Navigate your way into the cloned directory. If you want to confirm the tests are passing still, you can run the tests (reference 'To Run Tests'). Otherwise
 
-#### Build the gem
+#### Build the gem locally
 ```
 gem build nba_api_wrapper.gemspec
 ```
-#### Install the gem
+#### Install the gem from rubygems
 ```
-gem install nba_api_wrapper-0.1.0.gem
+gem install nba_api_wrapper
 ```
 
 #### To Use The Gem
 
-##### Locally
+##### From RubyGems
 ```
 require 'nba_api_wrapper'
 ```
@@ -36,7 +36,7 @@ bundle install
 ```
 
 ```
-rspec spec/wrapper_spec.rb
+bundle exec rspec spec/wrapper_spec.rb
 ```
 
 # Usage
@@ -79,7 +79,7 @@ game_id is required (and is the NBA's game id), while start_period and end_perio
 ## Team Info
 #### Get Lots Of Team Stat Info
 ```ruby```
-NBA::TeamStats.get_team_stats(lots of params)
+NBA::Stats::Team.get_team_stats(lots of params)
 ```
 *IMPORTANT*
 
@@ -87,14 +87,14 @@ This accepts a boatload of params at the moment, none of which are required and 
 
 #### Get Team Info
 ```ruby```
-NBA::TeamStats.get_teams
+NBA::Stats::Team.get_teams
 ```
 
 This will return a list of current NBA teams in a hash where the key is the team id and the value is their name in string format
 
 #### Get A Team Name
 ```ruby```
-NBA::TeamStats.get_team_by_id(id)
+NBA::Stats::Team.get_team_by_id(id)
 ```
 
 This will return a a string of a team name when passed a team id. The id is required.
