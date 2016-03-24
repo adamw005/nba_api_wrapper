@@ -109,4 +109,4 @@ As is the case with all wrappers around 3rd party end points, I do not claim own
 
 # Contributing
 
-Happy to have people contibute to this if they'd like! Please submit pull requests if you have anything you'd like me to add!
+Happy to have people contribute to this if they'd like! Please submit pull requests (along with updated tests) if you have anything you'd like me to add!
