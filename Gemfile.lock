@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nba_api_wrapper (0.2.3)
+    nba_api_wrapper (0.2.4)
       http (~> 1.0.2, >= 1.0)
       json (~> 1.8.1, >= 1.8.1)
 

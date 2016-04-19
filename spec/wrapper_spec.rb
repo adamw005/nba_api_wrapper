@@ -34,6 +34,12 @@ describe 'NBA:Game' do
     end
   end
 
+  context '#get_scoreboard: gets the scoreboard for a date' do
+    it 'should be a hash' do
+      expect(NBA::Game.get_scoreboard().class.to_s).to eql("Hash")
+    end
+  end
+
 end
 
 # PLAY BY PLAY TESTS
@@ -135,6 +141,11 @@ describe 'NBA::Tracking::Stats' do
     end
   end
 
+  context '#get_play_type_stats' do
+    it 'should be a hash' do
+      expect(NBA::Stats::PlayType.get_by_play_type().class.to_s).to eql("Hash")
+    end
+  end
 
 end
 
